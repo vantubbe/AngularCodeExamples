@@ -1,0 +1,35 @@
+<html lang="en" ng-app="myApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Event Reg</title>
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/css/normalize.css">
+    <link rel="stylesheet" href="bower_components/html5-boilerplate/css/main.css">
+    <link rel="stylesheet" type="text/css" media="all"
+          href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/smoothness/jquery-ui.css"    />
+</head>
+<body>
+
+<label for="eventDate">Date:</label>
+<input id="eventDate" type="text" date-picker/>
+<br/>
+Text to Copy: <input type="text" ng-model="text"/>
+
+<div repeat-x="5" text="{{text}}">{{text}}</div>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-cookies/angular-cookies.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="app.js"></script>
+<script src="view1/view1.js"></script>
+<script src="view2/view2.js"></script>
+<script src="directives/compileDirective.js"></script>
+<script src="directives/wrappingJQuery.js"></script>
+<script src="components/version/version.js"></script>
+<script src="components/version/version-directive.js"></script>
+<script src="components/version/interpolate-filter.js"></script>
+
+</body>
+</html>
